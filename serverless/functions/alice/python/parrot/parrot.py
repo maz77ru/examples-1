@@ -5,7 +5,7 @@ def handler(event, context):
     :param context: information about current execution context.
     :return: response to be serialized as JSON.
     """
-    text = 'Hello! I\'ll repeat anything you say to me.'
+    text =  'Привет! Я повторю все, что вы мне скажете. '
     if 'request' in event and \
             'original_utterance' in event['request'] \
             and len(event['request']['original_utterance']) > 0:
